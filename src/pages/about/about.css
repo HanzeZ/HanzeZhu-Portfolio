@@ -1,0 +1,123 @@
+.about{
+    width:100vw;
+    max-height:2500px;
+    max-width: 100%;
+    background-color: #1D1D1D;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper_top{
+    height:1000px;
+    display: flex;
+}
+
+.wrapper_middle{
+    height:250px;
+    background-color: #F2F2F2;
+    display:flex;
+    justify-content: center;
+}
+.wrapper_buttom{
+    height:400px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+.footer{
+    height:70px;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_pic{
+    width:50%;
+    object-fit: cover;
+    filter: grayscale();
+}
+
+.wrapper_top_right{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper_top_right h1{
+    height:30%;
+    width:80%;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    color:#08FDD8;
+}
+.wrapper_top_right p{
+    height:30%;
+    width:80%;
+    font-size: 20px;
+    line-height: 30px;
+    color:#08FDD8;
+}
+
+.wrapper_top_right span:hover{
+    transition-duration: 500ms;
+    color:white;
+    cursor:pointer;
+}
+
+.wrapper_middle h1{
+    width:50%;
+    height:100%;
+    font-size: 100px;
+    font-family: 'Open Sans',sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#141E55;
+}
+
+.middle_desc{
+    width:40%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.middle_desc h2{
+    color:#141E55;
+}
+
+.middle_desc p{
+    margin-top:15px;
+    line-height:20px;
+}
+
+.buttom_blocks{
+    width:33%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttom_blocks img{
+    width:15%;
+    height:15%;
+    color:#141E55;
+}
+.buttom_blocks h2{
+    color:black;
+    font-size:25px;
+    margin-top:10px;
+}
+.buttom_blocks h3, .buttom_blocks span{
+    color:#7510F7;
+}
+.buttom_blocks p{
+    margin-top:3px;
+}
+
+.footer p{
+    color:white;
+}

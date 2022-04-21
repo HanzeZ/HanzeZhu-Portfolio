@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import react,{ useState } from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import Header from './components/header/header'
+import About from './pages/about/about'
+import Headertoggle from './components/header/headertoggle';
 function App() {
+  const [header,setHeader] = useState(false);
+  const headerHandler = () => {
+    setHeader(!header)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Headertoggle open={header} handler={headerHandler}/>
+        {header? <Header handler={headerHandler}/> : null }
+        <Routes>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/header' element={<Headertoggle/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
